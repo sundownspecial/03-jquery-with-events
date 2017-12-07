@@ -76,9 +76,10 @@ _Your repository must include:_
 _Your README.md must include:_
 
 ```md
-# Project Name
+# Jquery with Events
 
-**Author**: Your Name Goes Here
+Caitlin and Jesus
+
 **Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
