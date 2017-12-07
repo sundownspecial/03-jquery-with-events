@@ -71,9 +71,9 @@ articleView.handleCategoryFilter = function() {
 articleView.handleMainNav = function() {
   $('.icon-address-book').on('click', function(e) {
 
-        $('.tab-content').hide();
+        $('.tab-content').hide(350);
         
-        $(`#about`).show();
+        $(`#about`).show(350);
          
 
    
@@ -81,9 +81,9 @@ articleView.handleMainNav = function() {
   $('.icon-home').on('click', function(e) {
     
       
-            $('.tab-content').show();
+            $('.tab-content').show(350);
             
-            $(`#about`).hide();
+            $(`#about`).hide(350);
 
   });
              
@@ -97,10 +97,14 @@ articleView.setTeasers = function() {
 
   $('.read-on').on('click', function(e) {
     
-      console.log($(this));
-    $('.article-body *:nth-of-type(n+2)').parent().show();
+    console.log($(this).parent());
+    let currentArticle = $(this)[0].parentElement;
+    $(currentArticle).addClass('user-read');
+    $('.user-read').show();
 
-    $(`.read-on`).hide();
+    $(`.user-read .article-body *:nth-of-type(n+2)`).show();
+
+    $(`.user-read .read-on`).hide();
             
            
 
