@@ -78,4 +78,4 @@ articleView.setTeasers = function() {
 $(document).ready(function() {
 
 })
-articleView.populateFilters();
+// articleView.populateFilters();
